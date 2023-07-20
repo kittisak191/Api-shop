@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -19,7 +18,6 @@ interface Props {
   handleDelete: (index: number) => void;
 }
 function List({
-  addToCart,
   cart,
   counts,
   handleAddItem,

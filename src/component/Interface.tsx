@@ -1,6 +1,5 @@
 import Footer from "./Footer";
 import Item from "./Item";
-import Navbar from "./Navbar";
 import "./interface.css";
 
 function Interface() {

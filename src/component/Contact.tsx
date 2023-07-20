@@ -3,16 +3,10 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons/faLocationDot";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
 import Swal from "sweetalert2";
-import { useEffect } from "react";
 import Footer from "./Footer";
 import "./contact.css";
-// import AOS from "aos";
 
 function Contact() {
-  // useEffect(() => {
-  //   AOS.init();
-  //   AOS.refresh();
-  // }, []);
   const Handleclick = (e) => {
     e.preventDefault();
     Swal.fire("ส่งข้อมูลแล้ว", "You clicked the button!", "success");
