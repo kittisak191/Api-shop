@@ -3,7 +3,10 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-function Navbar(props) {
+interface Props {
+  counts?: number;
+}
+function Navbar(props: Props) {
   const itemCount = props.counts ? (
     <span className="item-count">{props.counts}</span>
   ) : null;

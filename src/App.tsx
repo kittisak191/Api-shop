@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Swal from "sweetalert2";
 import Interface from "./component/Interface";
@@ -8,12 +8,16 @@ import Form from "./component/Form";
 import Navbar from "./component/Navbar";
 import Contact from "./component/Contact";
 import About from "./component/About";
-
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+}
 function App() {
-  const [cart, setCart] = useState([]);
-  const [counts, setCounts] = useState([]);
+  const [cart, setCart] = useState<Product[]>([]);
+  const [counts, setCounts] = useState<number[]>([]);
 
-  const addToCart = (product) => {
+  const addToCart = (product: Product) => {
     const updatedCart = [...cart, product];
     const updatedCounts = [...counts, 1];
     setCart(updatedCart);
@@ -21,13 +25,13 @@ function App() {
     Swal.fire("เพิ่มสินค้าแล้ว", "You clicked the button!", "success");
   };
 
-  const handleAddItem = (index) => {
+  const handleAddItem = (index: number) => {
     const updatedCounts = [...counts];
     updatedCounts[index] += 1;
     setCounts(updatedCounts);
   };
 
-  const handleDropItem = (index) => {
+  const handleDropItem = (index: number) => {
     const updatedCounts = [...counts];
     if (updatedCounts[index] > 1) {
       updatedCounts[index] -= 1;
@@ -35,7 +39,7 @@ function App() {
     }
   };
 
-  const handleDelete = (index) => {
+  const handleDelete = (index: number) => {
     const updatedCart = [...cart];
     updatedCart.splice(index, 1);
     const updatedCounts = [...counts];

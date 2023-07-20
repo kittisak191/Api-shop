@@ -9,9 +9,16 @@ import "./item.css";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
+interface Item {
+  id: number;
+  image: string;
+  title: string;
+  category: string;
+  price: number;
+}
 function Item() {
-  const [data, setData] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [data, setData] = useState<Item[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,9 +27,9 @@ function Item() {
         const jsonData = await res.json();
         setData(jsonData);
 
-        const uniqueCategories = [
-          ...new Set(jsonData.map((product) => product.category)),
-        ];
+        const uniqueCategories = Array.from(
+          new Set(jsonData.map((product: Item) => product.category))
+        ) as string[];
         setCategories(uniqueCategories);
       } catch (error) {
         console.log(error);
@@ -32,8 +39,8 @@ function Item() {
     fetchData();
   }, []);
 
-  const renderSwiperSlides = (products) => {
-    return products.map((product) => (
+  const renderSwiperSlides = (products: Item[]) => {
+    return products.map((product: Item) => (
       <SwiperSlide key={product.id}>
         <div className="col-lg-12 col-md-12 col-sm-12">
           <div className="card item-card">

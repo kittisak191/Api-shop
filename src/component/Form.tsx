@@ -11,7 +11,7 @@ import "./form.css";
 import Footer from "./Footer";
 
 function Form() {
-  const Handleclick = (e) => {
+  const Handleclick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     Swal.fire("ส่งข้อมูลแล้ว", "You clicked the button!", "success");
   };

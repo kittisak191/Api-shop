@@ -2,7 +2,17 @@ import { useLocation } from "react-router-dom";
 import "./product.css";
 import Footer from "./Footer";
 
-function Productdetail({ addToCart }) {
+interface Product {
+  image: string;
+  title: string;
+  category: string;
+  price: number;
+}
+
+interface Props {
+  addToCart: (product: Product) => void;
+}
+function Productdetail({ addToCart }: Props) {
   const location = useLocation();
   const { product } = location.state;
 

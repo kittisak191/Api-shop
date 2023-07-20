@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import "./contact.css";
 
 function Contact() {
-  const Handleclick = (e) => {
+  const Handleclick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     Swal.fire("ส่งข้อมูลแล้ว", "You clicked the button!", "success");
   };
