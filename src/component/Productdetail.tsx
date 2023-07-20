@@ -23,7 +23,7 @@ function Productdetail({ addToCart }: Props) {
     <div>
       <div className="container product-container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-card">
             <div className="card product-card">
               <img
                 className="img-fluid product-img"
@@ -32,7 +32,7 @@ function Productdetail({ addToCart }: Props) {
               />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-detail">
             <div className="product-detail ">
               <h1 className="product-h1">{product.title}</h1>
               <h4 className="product-h4">{product.category}</h4>

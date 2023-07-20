@@ -20,10 +20,10 @@ function About() {
           </p>
         </div>
         <h1 className="about-h1">เครื่องมือ</h1>
-        <div className="col-12">
-          <div className="row">
-            <div className="col-md-3">
-              <div className="card about-item">
+        <div className="container">
+          <div className="row about-row">
+            <div className="item about-item col-lg-3 col-md-3 col-sm-6">
+              <div className="card about-card">
                 <img
                   className="img-fluid about-img"
                   src="/img/react.png"
@@ -31,8 +31,8 @@ function About() {
                 />
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img
                   className="img-fluid about-img"
                   src="/img/vite.png"
@@ -40,18 +40,18 @@ function About() {
                 />
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img className="img-fluid about-img" src="/img/js.png" alt="" />
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img className="img-fluid about-img" src="/img/ts.png" alt="" />
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img
                   className="img-fluid about-img"
                   src="/img/bootstrap.png"
@@ -59,8 +59,8 @@ function About() {
                 />
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img
                   className="img-fluid about-img"
                   src="/img/swiper.png"
@@ -68,8 +68,8 @@ function About() {
                 />
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img
                   className="img-fluid about-img"
                   src="/img/aos2.png"
@@ -77,9 +77,8 @@ function About() {
                 />
               </div>
             </div>
-
-            <div className="col-md-3">
-              <div className="card about-item">
+            <div className="item about-item col-lg-3 col-md-6 col-sm-12">
+              <div className="card about-card">
                 <img
                   className="img-fluid about-img"
                   src="/img/vercel.png"

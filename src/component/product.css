@@ -38,3 +38,41 @@
   color: white;
   text-decoration: none;
 }
+@media (max-width: 1200px) {
+  .product-card {
+    width: 450px;
+  }
+}
+@media (max-width: 992px) {
+  .product-card {
+    width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .product-img {
+    margin-left: 50px;
+  }
+  .product-card {
+    width: 400px;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+  }
+  .product-detail {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .product-img {
+    margin-left: 50px;
+  }
+  .product-card {
+    width: 300px;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+  }
+  .product-detail {
+    margin-left: 20px;
+  }
+}
