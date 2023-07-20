@@ -8,16 +8,16 @@ import Form from "./component/Form";
 import Navbar from "./component/Navbar";
 import Contact from "./component/Contact";
 import About from "./component/About";
-interface Product {
+interface Item {
   id: number;
   name: string;
   price: number;
 }
 function App() {
-  const [cart, setCart] = useState<Product[]>([]);
+  const [cart, setCart] = useState<Item[]>([]);
   const [counts, setCounts] = useState<number[]>([]);
 
-  const addToCart = (product: Product) => {
+  const addToCart = (product: Item) => {
     const updatedCart = [...cart, product];
     const updatedCounts = [...counts, 1];
     setCart(updatedCart);
