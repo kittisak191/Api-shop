@@ -3,19 +3,24 @@ import "./product.css";
 import Footer from "./Footer";
 
 interface Item {
-  image: string;
-  title: string;
-  category: string;
+  id: number;
+  name: string;
   price: number;
+  title: string;
+  image: string;
+  category: string;
 }
 
-function Productdetail({ addToCart }: { addToCart: (product: Item) => void }) {
+interface Props {
+  addToCart: (product: Item) => void;
+}
+
+function Productdetail({ addToCart }: Props) {
   const location = useLocation();
   const { product } = location.state;
 
   return (
     <div>
-      โ
       <div className="container product-container">
         <div className="row">
           <div className="col-lg-6">

@@ -4,26 +4,38 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "./list.css";
 
-interface Item {
-  image: string;
+interface Product {
+  id: number;
+  name: string;
   title: string;
   price: number;
+  image: string;
+  category: string;
 }
-interface Props {
-  addToCart: (item: Item) => void;
-  cart: Item[];
+
+interface CartItem extends Product {}
+
+interface ListProps {
+  addToCart: (product: Product) => void; // Change to 'Product' type here
+  cart: CartItem[];
   counts: number[];
   handleAddItem: (index: number) => void;
   handleDropItem: (index: number) => void;
   handleDelete: (index: number) => void;
 }
+
 function List({
+  addToCart,
   cart,
   counts,
   handleAddItem,
   handleDropItem,
   handleDelete,
-}: Props) {
+}: ListProps) {
+  const handleAddToCart = (item: Product) => {
+    addToCart(item);
+  };
+
   const totalPricePerItem = cart.map(
     (item, index) => item.price * counts[index]
   );
