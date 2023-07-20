@@ -1,4 +1,5 @@
 .form-container {
+  min-height: 100vh;
   font-family: "Kanit", sans-serif;
   margin-top: 100px;
   margin-bottom: 50px;

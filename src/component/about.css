@@ -1,5 +1,6 @@
 .about-container {
   font-family: "Kanit", sans-serif;
+  min-height: 100vh;
   margin-top: 100px;
   margin-bottom: 50px;
 }

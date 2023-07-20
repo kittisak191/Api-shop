@@ -25,17 +25,12 @@ interface ListProps {
 }
 
 function List({
-  addToCart,
   cart,
   counts,
   handleAddItem,
   handleDropItem,
   handleDelete,
 }: ListProps) {
-  const handleAddToCart = (item: Product) => {
-    addToCart(item);
-  };
-
   const totalPricePerItem = cart.map(
     (item, index) => item.price * counts[index]
   );
