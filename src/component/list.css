@@ -1,0 +1,47 @@
+.list-container {
+  font-family: "Kanit", sans-serif;
+  margin-top: 100px;
+}
+.list-row {
+  margin-top: 60px;
+  box-shadow: rgb(229, 229, 229) 0px 0px 0px 0px inset,
+    rgb(229, 229, 229) 0px 0px 0px 0px inset,
+    rgb(229, 229, 229) 0px -1px 0px 0px inset,
+    rgb(229, 229, 229) 0px 0px 0px 0px inset;
+}
+.list-img {
+  width: 300px;
+  height: 300px;
+}
+.list-item-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list-item-money {
+  display: flex;
+  flex-direction: column;
+}
+.card-total {
+  margin-top: 30px;
+  border: none;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+}
+.card-total h2 {
+  font-size: 30px;
+}
+.card-total p {
+  font-size: 20px;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.list-h1 {
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  margin-top: 50px;
+}

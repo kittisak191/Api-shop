@@ -1,0 +1,40 @@
+.product-container {
+  font-family: "Kanit", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.product-h1 {
+  margin-bottom: 30px;
+}
+.product-h4 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.product-p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.product-card {
+  width: 600px;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+}
+.product-card img {
+  object-fit: cover;
+  object-position: center;
+}
+.product-detail {
+  margin-top: 110px;
+  margin-left: 80px;
+}
+.btn-add {
+  margin-left: 80px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+.btn-buy {
+  color: white;
+  text-decoration: none;
+}

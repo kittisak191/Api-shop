@@ -1,0 +1,66 @@
+.container {
+  margin-bottom: 50px;
+}
+.swiper {
+  height: 600px;
+  margin-bottom: 100px;
+}
+.swiper-container {
+  overflow: hidden;
+}
+.swiper-button-next {
+  display: none;
+}
+.swiper-button-prev {
+  display: none;
+}
+.swiper-pagination {
+  display: none;
+}
+.swiper-scrollbar {
+  display: none;
+}
+.item-h1 {
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 20px;
+}
+
+.item-card {
+  margin-top: 30px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  height: 550px;
+}
+.item-card:hover img {
+  scale: 120%;
+}
+.item-card img {
+  transition: scale 400ms;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 50px;
+  height: 300px;
+}
+.item-detail {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Kanit", sans-serif;
+}
+.item-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-h2 {
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+}
