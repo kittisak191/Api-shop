@@ -1,3 +1,7 @@
+.item-container {
+  min-height: 100vh;
+  font-family: "Kanit", sans-serif;
+}
 .swiper {
   height: 600px;
   margin-bottom: 100px;

@@ -42,15 +42,21 @@ function Item() {
   const renderSwiperSlides = (products: Item[]) => {
     return products.map((product: Item) => (
       <SwiperSlide key={product.id}>
-        <div className="col-lg-12 col-md-12 col-sm-12">
-          <div className="card item-card">
-            <Link to={`/Productdetail/${product.id}`} state={{ product }}>
-              <img className="img-fluid item-img" src={product.image} alt="" />
-            </Link>
-            <div className="item-detail">
-              <p className="item-title">{product.title}</p>
-              <p>ราคา : ฿ {product.price}</p>
-              <p>{product.category}</p>
+        <div className="container item-container">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <div className="card item-card">
+              <Link to={`/Productdetail/${product.id}`} state={{ product }}>
+                <img
+                  className="img-fluid item-img"
+                  src={product.image}
+                  alt=""
+                />
+              </Link>
+              <div className="item-detail">
+                <p className="item-title">{product.title}</p>
+                <p>ราคา : ฿ {product.price}</p>
+                <p>{product.category}</p>
+              </div>
             </div>
           </div>
         </div>
