@@ -12,7 +12,11 @@ interface Product {
 interface Props {
   addToCart: (product: Product) => void;
 }
-function Productdetail({ addToCart }: Props) {
+function Productdetail({
+  addToCart,
+}: {
+  addToCart: (product: Product) => void;
+}) {
   const location = useLocation();
   const { product } = location.state;
 

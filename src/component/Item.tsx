@@ -24,7 +24,7 @@ function Item() {
     const fetchData = async () => {
       try {
         const res = await fetch("https://fakestoreapi.com/products");
-        const jsonData = await res.json();
+        const jsonData: Item[] = await res.json();
         setData(jsonData);
 
         const uniqueCategories = Array.from(
