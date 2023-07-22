@@ -43,14 +43,12 @@ function Navbar(props: Props) {
               <Link to="/contact" className="nav-link">
                 ติดต่อเรา
               </Link>
-              <span className="shop">
-                <Link to="/List" className="nav-link ">
-                  <FontAwesomeIcon className="nav-shop" icon={faCartShopping} />
-                  {itemCount}
-                </Link>
-              </span>
             </ul>
           </span>
+          <Link to="/List" className="nav-link fixed-shop">
+            <FontAwesomeIcon className="nav-shop" icon={faCartShopping} />
+            {itemCount}
+          </Link>
         </div>
       </nav>
     </div>
