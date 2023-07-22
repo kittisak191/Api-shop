@@ -39,7 +39,7 @@
   border: none;
   border-radius: 10px;
   top: 15%;
-  right: 20px;
+  right: 0;
   transform: translateY(-50%);
   width: 42.5px;
   height: 34px;
@@ -50,4 +50,14 @@
 
 .item-count {
   color: white;
+}
+@media (max-width: 768px) {
+  .fixed-shop {
+    top: 10%;
+  }
+}
+@media (max-width: 576px) {
+  .fixed-shop {
+    top: 13%;
+  }
 }
